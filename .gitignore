@@ -1,0 +1,24 @@
+# Java / build
+/bin/
+target/
+*.class
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEA (if any)
+*.iml
+.idea/
+
+# Others
+*.tmp
+
