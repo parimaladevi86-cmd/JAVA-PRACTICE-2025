@@ -22,3 +22,5 @@ Thumbs.db
 # Others
 *.tmp
 
+bin/
+.metadata/
