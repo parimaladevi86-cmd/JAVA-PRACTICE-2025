@@ -42,13 +42,14 @@ public class Main {
 
 					System.out.println("Total students: " + service.getAllStudents().size());
 					System.out.println(s);
-				 
+					System.out.println("------------------------------------------");
 				}
-                 break;
+				break;
+
 			case 3:
 				System.out.println("Enter studentId to be removed:");
-				int removeId= sc.nextInt();
-				
+				int removeId = sc.nextInt();
+
 				boolean removed = service.removeStudentById(removeId);
 				if (removed == true) {
 					System.out.println("Student removed successfully");
@@ -57,9 +58,10 @@ public class Main {
 				}
 				System.out.println("------------------------------------------");
 				System.out.println("Total students: " + service.getAllStudents().size());
+				System.out.println("------------------------------------------");
 				for (Student s : service.getAllStudents()) {
 					System.out.println(s);
-					
+
 				}
 				break;
 			case 4:
@@ -68,31 +70,6 @@ public class Main {
 				return;
 			}
 		}
-
-		/*
-		 * Student student1 = new Student(101, "Shalini", 11,6,495); Student student2 =
-		 * new Student(102, "Anu", 11,6,350); Student student3 = new Student(103,
-		 * "Bala", 11,6,476); Student student4 = new Student(104, "Krishna", 11,6,333);
-		 */
-		/*
-		 * service.addStudent(student1); service.addStudent(student2);
-		 * service.addStudent(student3); service.addStudent(student4);
-		 */
-
-		/*
-		 * System.out.println("ID | NAME | AGE | GRADE | MARKS");
-		 * System.out.println("------------------------------------------"); for
-		 * (Student s : service.getAllStudents()) { System.out.println(s); }
-		 */
-
-		/*
-		 * System.out.println("------------------------------------------"); boolean
-		 * removed =service.removeStudentById(102); if(removed=true) {
-		 * System.out.println("Student removed successfully"); } else {
-		 * System.out.println("Student not removed"); }
-		 * System.out.println("------------------------------------------"); for
-		 * (Student s : service.getAllStudents()) { System.out.println(s); }
-		 */
 
 	}
 
